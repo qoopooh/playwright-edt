@@ -21,7 +21,7 @@ test('demo', async ({ page }) => {
   await page.locator('.sd-set-site-title-size-down').first().click();
 
   await page.locator('#popup-bottom-right-button').click();
-  await page.locator('#sd-block-content').getByText('Tell your visitor what this block is about. Use words and vocabulary you are sur').click();
+  await page.locator('.sd-block-text-desc.sd-block-fake-text').click();
   await page.locator('.note-editable').click();
   await page.locator('.note-editable').fill('Write some text with Text Editor');
 
